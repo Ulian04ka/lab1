@@ -1,0 +1,3 @@
+﻿1>------ Build started: Project: my programm, Configuration: Debug Any CPU ------
+1>  my programm -> H:\Documents\my programm\my programm\bin\Debug\my programm.exe
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
