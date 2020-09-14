@@ -33,7 +33,25 @@ namespace my_programm
         /// </summary>
         private int number;
         #endregion
-
+        #region Properties
+        public int Age// повторить для каждого поля
+        {
+            get//ворачивает
+            {
+                return age;
+            }
+            set//меняет
+            {
+                if (value>6 && value<100)
+                age = value;
+                else
+                {
+                    age = 18;
+                    Console.WriteLine("Попытка установления некорректного возраста {0}  для студента {1}", value, name);
+                }
+            }
+        }
+        #endregion
         #region Methods
         public void print()
         {
@@ -46,7 +64,8 @@ namespace my_programm
             Console.WriteLine();
         }
         #endregion
-        #region Constractions
+        // в конструкторе использовать свойства 
+        #region Constractions 
         int NewNumber()
         {
             Random rnd = new Random();
@@ -84,9 +103,14 @@ namespace my_programm
         /// <param name="gr">группа</param>
         public student(string fio, string gr)
             : this(fio, gr, "math", 18) { }
+        #endregion// 
+        public static bool operator>(student s1, student s2)
         {
-            
+            return s1.age > s2.age;
         }
-        #endregion
+        public static bool operator<(student s1, student s2)
+        {
+            return s1.age < s2.age;
+        }
     }
 }

@@ -13,6 +13,14 @@ namespace my_programm
         {
             student s = new student();
             s.print();
+            student Ivanov = new student("Иванов Иван", "КБ");
+            Ivanov.print();
+            student Petrov = new student("Петров Иван", "КБ", "math", 19);
+            Petrov.print();
+            Petrov.Age = 13;
+            Petrov.print();
+            if (Ivanov > Petrov) Console.WriteLine("Иванов старше петрова");
+            if (Ivanov < Petrov) Console.WriteLine("Иванов младше петрова");
             Console.ReadKey();
         }
     }
