@@ -53,7 +53,7 @@ namespace my_programm
         }
         #endregion
         #region Methods
-        public void print()
+        public virtual void print()
         {
             Console.WriteLine("Информация о студенте: ");
             Console.WriteLine("Фио: {0} ", name);

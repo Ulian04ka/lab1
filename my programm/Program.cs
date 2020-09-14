@@ -21,6 +21,9 @@ namespace my_programm
             Petrov.print();
             if (Ivanov > Petrov) Console.WriteLine("Иванов старше петрова");
             if (Ivanov < Petrov) Console.WriteLine("Иванов младше петрова");
+            Starosta st = new Starosta();
+            st.Age = 15;
+            st.print();
             Console.ReadKey();
         }
     }
